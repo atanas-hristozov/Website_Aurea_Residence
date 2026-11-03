@@ -1,0 +1,904 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Апартаменти | AUREA RESIDENCE</title>
+    <meta name="description" content="Изберете етаж и разгледайте апартаментите в AUREA RESIDENCE.">
+
+    <link rel="stylesheet" href="../public/css/main.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+    <script src="../js/modules/floorPlan.js" defer></script>
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo_02.png">
+</head>
+
+<body class="apartments-page">
+
+        <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            
+            <!-- LOGO -->
+            <a href="../index.html"
+            class="header__brand"
+            aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="../assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                id="desktop-navigation"
+                aria-label="Основна навигация">
+
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html" class="desktop-navigation__contact" aria-current="page">
+                    Контакти Контакти
+                    <span class="arrow-icon" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+        
+        <!-- MOBILE NAVIGATION -->
+        <nav class="navigation"
+            id="main-navigation"
+            aria-label="Мобилна навигация"
+            aria-hidden="true"
+            inert>
+
+            <div class="navigation__inner">
+
+                <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+                <ul class="navigation__list">
+                    <li><a href="../index.html">Начало</a></li>
+                    <li><a href="../pages/apartments.html">Апартаменти</a></li>
+                    <li><a href="../pages/gallery.html">Галерия</a></li>
+                    <li><a href="../pages/model.html">3D Модел</a></li>
+                    <li><a href="../pages/location.html">Локация</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+
+                <div class="navigation__footer">
+                    <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                    <span>СОФИЯ, БЪЛГАРИЯ</span>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+<main>
+
+    <!-- PAGE INTRO -->
+    <section class="building-explorer" id="building-explorer">
+        <div class="container">
+
+            <div class="building-explorer__heading">
+                <span class="section-eyebrow">AUREA RESIDENCE · APARTMENTS</span>
+
+                <h1>Открийте своя<br><span>нов дом.</span></h1>
+
+                <p>
+                    Изберете етаж от визуализацията на сградата
+                    или използвайте бутоните, за да разгледате
+                    разпределенията на апартаментите.
+                </p>
+            </div>
+
+            <div class="building-explorer__visual">
+
+                <img
+                    src="../assets/images/exterior/Exterior_01.jpg"
+                    alt="Архитектурна визуализация на AUREA RESIDENCE"
+                    class="building-explorer__image"
+                >
+
+                <!-- Интерактивни зони върху фасадата -->
+                <div class="building-hotspots" aria-label="Избор на етаж">
+
+                    <button
+                        class="building-hotspot"
+                        type="button"
+                        data-floor="5"
+                        aria-label="Избери пети етаж"
+                        style="--top: 19%; --height: 12%;"
+                    >
+                        <span>05</span>
+                    </button>
+
+                    <button
+                        class="building-hotspot"
+                        type="button"
+                        data-floor="4"
+                        aria-label="Избери четвърти етаж"
+                        style="--top: 31%; --height: 12%;"
+                    >
+                        <span>04</span>
+                    </button>
+
+                    <button
+                        class="building-hotspot"
+                        type="button"
+                        data-floor="3"
+                        aria-label="Избери трети етаж"
+                        style="--top: 43%; --height: 14%;"
+                    >
+                        <span>03</span>
+                    </button>
+
+                    <button
+                        class="building-hotspot"
+                        type="button"
+                        data-floor="2"
+                        aria-label="Избери втори етаж"
+                        style="--top: 57%; --height: 14%;"
+                    >
+                        <span>02</span>
+                    </button>
+
+                    <button
+                        class="building-hotspot"
+                        type="button"
+                        data-floor="1"
+                        aria-label="Избери първи етаж"
+                        style="--top: 72%; --height: 18%;"
+                    >
+                        <span>01</span>
+                    </button>
+
+                </div>
+
+                <div class="building-explorer__hint">
+                    <span class="building-explorer__hint-icon" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                    ИЗБЕРЕТЕ ЕТАЖ ОТ СГРАДАТА
+                </div>
+
+            </div>
+
+            <div class="building-explorer__footer">
+                <div>
+                    
+                    
+                </div>
+
+                <a href="#floor-plans" class="building-explorer__scroll">
+                    КЪМ РАЗПРЕДЕЛЕНИЯТА
+                    <svg class="icon-svg icon-svg--down" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M12 4v15M6 13l6 6 6-6" />
+                    </svg>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- APARTMENT SELECTOR -->
+    <section class="unit-selector" id="floor-plans">
+        <div class="container">
+
+            <div class="unit-selector__heading">
+                <div>
+                    <span class="section-label">ИНТЕРАКТИВЕН ПЛАН</span>
+                    <h2>Изберете етаж</h2>
+                </div>
+
+                <p class="unit-selector__hint">
+                    Изберете жилище от схемата, за да разгледате подробностите.
+                </p>
+            </div>
+
+            <div class="unit-selector__layout">
+
+                <!-- FLOOR SELECTOR -->
+                <aside class="floor-selector">
+                    <span class="floor-selector__label">ЕТАЖИ</span>
+
+                    <div class="floor-selector__buttons" id="floor-buttons">
+                        <button type="button" data-floor="5">05</button>
+                        <button type="button" data-floor="4">04</button>
+                        <button type="button" data-floor="3">03</button>
+                        <button type="button" data-floor="2">02</button>
+                        <button type="button" data-floor="1" class="is-active">01</button>
+                        <button type="button" data-floor="6">-1</button>
+                        <button type="button" data-floor="7">-2</button>
+                    </div>
+
+                    <p class="floor-selector__note">
+                        Изберете номер, за да видите жилищата на съответния етаж.
+                    </p>
+                </aside>
+
+                <!-- FLOOR PLAN -->
+                 
+
+                <div class="floor-plan-panel">
+
+                    <div class="floor-plan-panel__header">
+                        <div>
+                            <span class="section-label">РАЗПРЕДЕЛЕНИЕ</span>
+                            <h3 id="selected-floor-title-02">Разпределение — Първи етаж</h3>
+                        </div>
+
+                        <span id="floor-unit-count">2 апартамента</span>
+                    </div>
+
+                    <div class="floor-plan-viewer">
+
+                        <!-- ПЪРВИ ЕТАЖ -->
+                        <div class="floor-plan-view is-active" data-floor-plan="1">
+
+                            <div class="interactive-plan" id="interactive-plan-1">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/ground-floor.JPG"
+                                    alt="Архитектурно разпределение на първия етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на апартамент от първия етаж"
+                                >
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-01"
+                                        points="120,940 1170,940 1170,310 1350,-20 1050,-190 120,-190"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-01"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-02"
+                                        points="1170,940 1700,940 1700,1050 1990,1050 1990,310 1350,-20 1170,310"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-02"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="M-01"
+                                        points="1700,940 1700,1510 1450,1510 1450,1050 1570,1050 1570,940"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент M-01"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="M-02"
+                                        points="660,1050 660,1510 910,1510 910,1050"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент M-02"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="M-03"
+                                        points="130,940 130,1510 660,1510 660,940"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент M-03"
+                                    />
+                                </svg>
+                            </div>
+
+                        </div>
+
+                        <!-- ВТОРИ ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="2" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/first-floor.jpg"
+                                    alt="Архитектурно разпределение на втория етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на апартамент от втория етаж"
+                                >
+                                    <!-- Добави тук SVG контурите за втория етаж. -->
+                                     <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-03"
+                                        points="630,770 1150,770 1150,1360 870,1360 870,1300 630,1300"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-03"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-04"
+                                        points="630,650 630,1360 370,1360 370,1300 95,1300 95,170 370,170 370,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-04"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-05"
+                                        points="370,650 370,60 1140,60 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-05"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-06"
+                                        points="1140,60 1670,60 1670,650 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-06"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-07"
+                                        points="1670,650 1670,170 1960,170 1960,1360 1670,1360 1670,1300 1420,1300 1420,780 1530,780 1530,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-07"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- ТРЕТИ ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="3" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/first-floor.jpg"
+                                    alt="Архитектурно разпределение на третия етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на апартамент от третия етаж"
+                                >
+                                    <!-- Добави тук SVG контурите за третия етаж. -->
+                                     <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-08"
+                                        points="630,770 1150,770 1150,1360 870,1360 870,1300 630,1300"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-08"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-09"
+                                        points="630,650 630,1360 370,1360 370,1300 95,1300 95,170 370,170 370,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-09"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-10"
+                                        points="370,650 370,60 1140,60 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-10"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-11"
+                                        points="1140,60 1670,60 1670,650 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-11"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-12"
+                                        points="1670,650 1670,170 1960,170 1960,1360 1670,1360 1670,1300 1420,1300 1420,780 1530,780 1530,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-12"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- ЧЕТВЪРТИ ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="4" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/first-floor.jpg"
+                                    alt="Архитектурно разпределение на четвъртия етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на апартамент от четвъртия етаж"
+                                >
+                                    <!-- Добави тук SVG контурите за четвъртия етаж. -->
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-13"
+                                        points="630,770 1150,770 1150,1360 870,1360 870,1300 630,1300"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-13"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-14"
+                                        points="630,650 630,1360 370,1360 370,1300 95,1300 95,170 370,170 370,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-14"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-15"
+                                        points="370,650 370,60 1140,60 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-15"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-16"
+                                        points="1140,60 1670,60 1670,650 1140,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-16"
+                                    />
+
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-17"
+                                        points="1670,650 1670,170 1960,170 1960,1360 1670,1360 1670,1300 1420,1300 1420,780 1530,780 1530,650"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-17"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- ПЕТИ ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="5" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/last-floor.JPG"
+                                    alt="Архитектурно разпределение на петия етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на апартамент от петия етаж"
+                                >
+                                    <!-- Добави тук SVG контурите за петия етаж. -->
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-18"
+                                        points="640,60 640,650 1160,640 1160,1360 880,1360 880,1300 640,1300 640,1360 390,1360 390,1300 110,1300 110,170 380,170 380,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-18"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-19"
+                                        points="640,650 1680,650 1680,60 640,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-19"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="A-20"
+                                        points="1430,650 1680,650 1680,170 1960,170 1960,1360 1670,1360 1670,1300 1430,1300 1430,780"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент A-20"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+
+                        <!-- ПЪРВИ ПОДЗЕМЕН ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="6" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/parking-01.JPG"
+                                    alt="Архитектурно разпределение на първи подземен етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на паркомясто"
+                                >
+                                    <!-- Добави тук SVG контурите за поздемния етаж. -->
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="40,60 40,470 290,470 290,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                   <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="510,60 510,470 290,470 290,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="730,60 730,470 510,470 510,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="730,60 730,470 930,470 930,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="1130,60 1130,470 930,470 930,60"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="40,860 40,1270 270,1270 270,860"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="490,860 490,1270 270,1270 270,860"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="700,860 700,1270 490,1270 490,860"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="700,860 700,1270 920,1270 920,860"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="1130,860 1130,1270 920,1270 920,860"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="1430,830 1430,1270 1690,1270 1690,830"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                        <!-- ВТОРИ ПОДЗЕМЕН ЕТАЖ -->
+                        <div class="floor-plan-view" data-floor-plan="7" hidden>
+                            <div class="interactive-plan">
+                                <img
+                                    class="interactive-plan__image"
+                                    src="../assets/images/floor-plans/parking-02.JPG"
+                                    alt="Архитектурно разпределение на втори подземен етаж"
+                                >
+
+                                <svg
+                                    class="interactive-plan__overlay"
+                                    viewBox="0 0 2048 1417"
+                                    preserveAspectRatio="xMidYMid meet"
+                                    aria-label="Избор на паркоместа"
+                                >
+                                    <!-- Добави тук SVG контурите за паркоместата. -->
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="1420,810 1420,1250 1660,1250 1660,810"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="1950,810 1950,1250 1660,1250 1660,810"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,70 430,70 430,270 70,270"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,470 430,470 430,270 70,270"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,470 430,470 430,670 70,670"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,850 430,850 430,670 70,670"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,850 430,850 430,1050 70,1050"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="70,1250 430,1250 430,1050 70,1050"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="1350,70 1550,70 1550,430 1350,430"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="1740,70 1550,70 1550,430 1740,430"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-01"
+                                        points="1740,70 1940,70 1940,430 1740,430"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-01"
+                                    />
+
+                                   <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="760,810 760,1040 1130,1040 1130,810"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                    <polygon
+                                        class="apartment-zone"
+                                        data-apartment="P-02"
+                                        points="760,1260 760,1040 1130,1040 1130,1260"
+                                        tabindex="0"
+                                        role="button"
+                                        aria-label="Апартамент P-02"
+                                    />
+                                </svg>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <p class="floor-plan-panel__note">
+                        Изберете апартамент от плана, за да видите подробната информация.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- CONTACT CTA -->
+    <section class="units-cta">
+        <div class="container">
+            <div class="units-cta__content">
+                <span class="section-label">НУЖДАЕТЕ СЕ ОТ СЪДЕЙСТВИЕ?</span>
+
+                <h2>Ще ви помогнем<br>да изберете.</h2>
+
+                <p>
+                    Свържете се с нас за информация относно жилищата,
+                    актуалната наличност и условията за покупка.
+                </p>
+
+                <a href="contacts.html" class="button button--light">
+                    Контакти <span class="building-explorer__hint-icon" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__main">
+
+            <a href="../index.html" class="footer__brand">
+                AUREA RESIDENCE
+            </a>
+
+            <p class="footer__description">
+                Съвременна архитектура.
+                Пространство за живот.
+            </p>
+
+            <nav class="footer__nav" aria-label="Навигация във футъра">
+
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html">Контакти</a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="current-year"></span>
+                AUREA RESIDENCE
+            </p>
+
+            <a href="#top">
+                НАГОРЕ
+                <svg class="icon-svg icon-svg--up" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20V5M6 11l6-6 6 6" />
+                </svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+<script src="../js/header.js" defer></script>
+<script src="../js/pages/apartments.js" defer></script>
+
+</body>
+</html>

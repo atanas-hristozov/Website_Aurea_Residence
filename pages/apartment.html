@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Имот | AUREA RESIDENCE</title>
+
+    <meta
+        name="description"
+        content="Разгледайте характеристиките на имотите в AUREA RESIDENCE."
+    >
+
+    <link rel="stylesheet" href="../public/css/main.min.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo_02.png">
+
+    <style>
+        [hidden] {
+            display: none !important;
+        }
+    </style>
+</head>
+
+<body class="apartment-page">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            <a href="../index.html"
+               class="header__brand"
+               aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="../assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+            </a>
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                 id="desktop-navigation"
+                 aria-label="Основна навигация">
+
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+
+                <a href="../pages/contacts.html"
+                   class="desktop-navigation__contact">
+                    Контакти <span class="arrow-icon" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+            </button>
+
+        </div>
+
+        <!-- MOBILE NAVIGATION -->
+        <nav class="navigation"
+             id="main-navigation"
+             aria-label="Мобилна навигация"
+             aria-hidden="true"
+             inert>
+
+            <div class="navigation__inner">
+
+                <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+                <ul class="navigation__list">
+                    <li><a href="../index.html">Начало</a></li>
+                    <li><a href="../pages/apartments.html">Апартаменти</a></li>
+                    <li><a href="../pages/gallery.html">Галерия</a></li>
+                    <li><a href="../pages/model.html">3D Модел</a></li>
+                    <li><a href="../pages/location.html">Локация</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+
+                <div class="navigation__footer">
+                    <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                    <span>СОФИЯ, БЪЛГАРИЯ</span>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- MAIN -->
+    <main id="top" class="apartment-page__main">
+
+        <!-- HERO -->
+        <section class="apartment-hero">
+
+            <div class="apartment-hero__image">
+                <img
+                    id="apartment-interior"
+                    src="../assets/images/interiors/interior_01.jpg"
+                    alt="Визуализация на имота"
+                >
+
+                <div id="interior-placeholder"
+                     class="image-placeholder"
+                     hidden>
+                    <span>Визуализацията скоро ще бъде добавена.</span>
+                </div>
+            </div>
+
+            <div class="apartment-hero__overlay"></div>
+
+            <div class="container apartment-hero__content">
+
+                <a href="apartments.html"
+                   id="apartment-back-link"
+                   class="apartment-back-link">
+                    <svg class="icon-svg icon-svg--left" viewBox="0 0 24 24" aria-hidden="true">
+                        <path d="M19 12H5M12 19l-7-7 7-7" />
+                    </svg>
+                    Всички имоти
+                </a>
+
+                <span class="section-label" id="apartment-section-label">
+                    AUREA RESIDENCE / ИМОТИ
+                </span>
+
+                <h1 id="apartment-hero-title">Имот</h1>
+
+                <p id="apartment-hero-subtitle"></p>
+
+                <div class="apartment-hero__meta">
+
+                    <div>
+                        <span>Обща площ</span>
+                        <strong id="apartment-area">—</strong>
+                    </div>
+
+                    <div class="property-apartment-only">
+                        <span>Спални</span>
+                        <strong id="apartment-bedrooms">—</strong>
+                    </div>
+
+                    <div class="property-apartment-only">
+                        <span>Бани</span>
+                        <strong id="apartment-bathrooms">—</strong>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="apartment-intro section-padding">
+
+            <div class="container apartment-intro__grid">
+
+                <div>
+                    <span class="section-label" id="intro-label">
+                        ВАШИЯТ НОВ ДОМ
+                    </span>
+
+                    <h2 id="apartment-title">Имот</h2>
+                </div>
+
+                <div class="apartment-intro__description">
+
+                    <p id="apartment-description">
+                        Разгледайте характеристиките на избрания имот.
+                    </p>
+
+                    <a
+                        id="apartment-inquiry"
+                        href="contacts.html"
+                        class="button button--primary">
+                        Запитване <span class="icon-arrow" aria-hidden="true">
+                                    <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                        <path d="M7 17 17 7M8 7h9v9" />
+                                    </svg>
+                                </span>
+                    </a>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- FLOOR PLANS -->
+        <section class="apartment-plans section-padding property-plans-only">
+
+            <div class="container">
+
+                <div class="apartment-section-heading">
+
+                    <div>
+                        <span class="section-label">АРХИТЕКТУРНО РЕШЕНИЕ</span>
+                        <h2 id="plans-title">Разпределение на имота</h2>
+                    </div>
+
+                    <p>
+                        Разгледайте архитектурния план и неговата триизмерна
+                        визуализация.
+                    </p>
+
+                </div>
+
+                <div class="apartment-plans__grid">
+
+                    <!-- 2D PLAN -->
+                    <article class="plan-card">
+
+                        <div class="plan-card__heading">
+
+                            <div>
+                                <span class="plan-card__index">01</span>
+                                <h3>Архитектурен план</h3>
+                            </div>
+
+                            <button
+                                class="plan-zoom"
+                                type="button"
+                                data-apartment-zoom="apartment-plan-image"
+                                aria-label="Увеличи архитектурния план">
+                                Увеличи <span class="icon-arrow" aria-hidden="true">
+                                            <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                                <path d="M7 17 17 7M8 7h9v9" />
+                                            </svg>
+                                        </span>
+                            </button>
+
+                        </div>
+
+                        <button
+                            class="plan-card__image-button"
+                            type="button"
+                            data-apartment-zoom="apartment-plan-image"
+                            aria-label="Отвори архитектурния план в увеличен размер">
+
+                            <img
+                                id="apartment-plan-image"
+                                src="../assets/images/apartments/apartment_03.JPG"
+                                alt="Архитектурен план"
+                                loading="lazy"
+                            >
+
+                            <span
+                                id="plan-placeholder"
+                                class="image-placeholder"
+                                hidden>
+                                Планът скоро ще бъде добавен.
+                            </span>
+
+                        </button>
+
+                        <p class="plan-card__caption">
+                            Двуизмерно архитектурно разпределение
+                        </p>
+
+                    </article>
+
+
+                    <!-- 3D PLAN -->
+                    <article class="plan-card">
+
+                        <div class="plan-card__heading">
+
+                            <div>
+                                <span class="plan-card__index">02</span>
+                                <h3>3D визуализация</h3>
+                            </div>
+
+                            <button
+                                class="plan-zoom"
+                                type="button"
+                                data-apartment-zoom="apartment-plan-3d"
+                                aria-label="Увеличи 3D визуализацията">
+                                Увеличи <span class="icon-arrow" aria-hidden="true">
+                                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                            <path d="M7 17 17 7M8 7h9v9" />
+                                        </svg>
+                                    </span>
+                            </button>
+
+                        </div>
+
+                        <button
+                            class="plan-card__image-button"
+                            type="button"
+                            data-apartment-zoom="apartment-plan-3d"
+                            aria-label="Отвори 3D визуализацията в увеличен размер">
+
+                            <img
+                                id="apartment-plan-3d"
+                                src="../assets/images/apartments/apartment_03_3D.png"
+                                alt="3D визуализация"
+                                loading="lazy"
+                            >
+
+                            <span
+                                id="plan-3d-placeholder"
+                                class="image-placeholder"
+                                hidden>
+                                3D визуализацията скоро ще бъде добавена.
+                            </span>
+
+                        </button>
+
+                        <p class="plan-card__caption">
+                            Триизмерно представяне на разпределението
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <p class="apartment-plans__note">
+                    Изображенията са с илюстративна цел. За точни размери и
+                    характеристики използвайте одобрената проектна документация.
+                </p>
+
+            </div>
+        </section>
+
+
+        <!-- SPECIFICATIONS -->
+        <section class="apartment-specifications section-padding">
+
+            <div class="container apartment-specifications__grid">
+
+                <div class="apartment-specifications__intro">
+
+                    <span class="section-label">ПОДРОБНА ИНФОРМАЦИЯ</span>
+
+                    <h2 id="specifications-title">
+                        Всеки детайл има значение.
+                    </h2>
+
+                    <p id="specifications-description">
+                        Основните характеристики на избрания имот са събрани
+                        на едно място.
+                    </p>
+
+                </div>
+
+                <div class="apartment-specifications__panel">
+
+                    <div class="specification-row">
+                        <span>Номер</span>
+                        <strong id="detail-number">—</strong>
+                    </div>
+
+                    <div class="specification-row">
+                        <span>Тип имот</span>
+                        <strong id="detail-type">—</strong>
+                    </div>
+
+                    <div class="specification-row property-floor-only">
+                        <span>Етаж</span>
+                        <strong id="detail-floor">—</strong>
+                    </div>
+
+                    <div class="specification-row">
+                        <span>Обща площ</span>
+                        <strong id="detail-area">—</strong>
+                    </div>
+
+                    <div class="specification-row property-apartment-only">
+                        <span>Спални</span>
+                        <strong id="detail-bedrooms">—</strong>
+                    </div>
+
+                    <div class="specification-row property-apartment-only">
+                        <span>Бани</span>
+                        <strong id="detail-bathrooms">—</strong>
+                    </div>
+
+                    <div class="specification-row property-apartment-only">
+                        <span>Тераси</span>
+                        <strong id="detail-balconies">—</strong>
+                    </div>
+
+                    <div class="specification-row property-exposure-only">
+                        <span>Изложение</span>
+                        <strong id="detail-exposure">—</strong>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- OTHER APARTMENTS -->
+        <section class="other-apartments section-padding property-apartments-only">
+
+            <div class="container">
+
+                <div class="apartment-section-heading">
+
+                    <div>
+                        <span class="section-label">ОЩЕ ВЪЗМОЖНОСТИ</span>
+                        <h2>Разгледайте и други жилища</h2>
+                    </div>
+
+                    <a href="apartments.html" class="text-link">
+                        Всички апартаменти <span class="icon-arrow" aria-hidden="true">
+                                            <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                                <path d="M7 17 17 7M8 7h9v9" />
+                                            </svg>
+                                        </span>
+                    </a>
+
+                </div>
+
+                <div id="other-apartments"
+                     class="other-apartments__grid">
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- CONTACT CTA -->
+        <section class="apartment-cta">
+
+            <div class="container apartment-cta__inner">
+
+                <div>
+                    <span class="section-label">AUREA RESIDENCE</span>
+
+                    <h2 id="apartment-cta-title">
+                        Представяте ли си това като свой дом?
+                    </h2>
+
+                    <p id="apartment-cta-description">
+                        Свържете се с нас за повече информация относно имота.
+                    </p>
+                </div>
+
+                <a
+                    id="apartment-cta-button"
+                    href="contacts.html"
+                    class="button button--light">
+                    Свържете се с нас <span class="icon-arrow" aria-hidden="true">
+                                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                            <path d="M7 17 17 7M8 7h9v9" />
+                                        </svg>
+                                    </span>
+                </a>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- IMAGE LIGHTBOX -->
+    <dialog id="apartment-lightbox" class="apartment-lightbox">
+
+        <div class="apartment-lightbox__toolbar">
+
+            <span id="apartment-lightbox-caption">Визуализация</span>
+
+            <button
+                id="apartment-lightbox-close"
+                class="apartment-lightbox__close"
+                type="button"
+                aria-label="Затвори увеличеното изображение">
+                <svg class="icon-svg icon-svg--close" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m18 6-12 12M6 6l12 12" />
+                </svg>
+            </button>
+
+        </div>
+
+        <div class="apartment-lightbox__content">
+            <img id="apartment-lightbox-image" src="" alt="">
+        </div>
+
+    </dialog>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__main">
+
+            <a href="../index.html" class="footer__brand">
+                AUREA RESIDENCE
+            </a>
+
+            <p class="footer__description">
+                Съвременна архитектура.
+                Пространство за живот.
+            </p>
+
+            <nav class="footer__nav" aria-label="Навигация във футъра">
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html">Контакти</a>
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="current-year"></span>
+                AUREA RESIDENCE
+            </p>
+
+            <a href="#top">
+                НАГОРЕ
+                <svg class="icon-svg icon-svg--up" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20V5M6 11l6-6 6 6" />
+                </svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <!-- SCRIPTS -->
+    <script src="../js/header.js" defer></script>
+    <script src="../js/pages/apartment.js" defer></script>
+
+</body>
+</html>

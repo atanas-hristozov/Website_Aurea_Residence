@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Галерия | AUREA RESIDENCE</title>
+
+    <meta
+        name="description"
+        content="Разгледайте архитектурата, екстериора и интериорните пространства на AUREA RESIDENCE."
+    >
+
+    <link rel="stylesheet" href="../public/css/main.min.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo_02.png">
+</head>
+
+<body class="gallery-page" id="top">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            
+            <!-- LOGO -->
+            <a href="../Index.html"
+            class="header__brand"
+            aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="../assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                id="desktop-navigation"
+                aria-label="Основна навигация">
+
+                <a href="../Index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html" aria-current="page">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html" class="desktop-navigation__contact">
+                    Контакти
+                    <span class="arrow-icon" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+        
+        <!-- MOBILE NAVIGATION -->
+        <nav class="navigation"
+            id="main-navigation"
+            aria-label="Мобилна навигация"
+            aria-hidden="true"
+            inert>
+
+            <div class="navigation__inner">
+
+                <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+                <ul class="navigation__list">
+                    <li><a href="../Index.html">Начало</a></li>
+                    <li><a href="../pages/apartments.html">Апартаменти</a></li>
+                    <li><a href="../pages/gallery.html">Галерия</a></li>
+                    <li><a href="../pages/model.html">3D Модел</a></li>
+                    <li><a href="../pages/location.html">Локация</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+
+                <div class="navigation__footer">
+                    <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                    <span>СОФИЯ, БЪЛГАРИЯ</span>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    
+    <!-- EXTERIOR HERO -->
+    <section class="gallery-cover" aria-label="Архитектура на AUREA RESIDENCE">
+        <img
+            class="gallery-cover__image"
+            src="../assets/images/exterior/Exterior_02.jpg"
+            alt="Архитектурна визуализация на AUREA RESIDENCE"
+            fetchpriority="high"
+        >
+
+        <div class="gallery-cover__overlay"></div>
+
+        <div class="gallery-cover__content">
+            <span class="gallery-cover__eyebrow">
+                AUREA RESIDENCE / АРХИТЕКТУРА
+            </span>
+
+            <h1>
+                Архитектура.<br>
+                <span>Светлина. Хармония.</span>
+            </h1>
+
+            <a href="#gallery" class="gallery-cover__link">
+                РАЗГЛЕДАЙТЕ ГАЛЕРИЯТА
+                <span class="arrow-icon" aria-hidden="true">
+                    <svg class="icon-svg icon-svg--down" viewBox="0 0 24 24">
+                        <path d="M12 4v15M6 13l6 6 6-6" />
+                    </svg>
+                </span>
+            </a>
+        </div>
+
+        <span class="gallery-cover__index">01 — 08</span>
+    </section>
+
+
+    <main>
+
+        <!-- GALLERY HERO -->
+        <section class="gallery-hero">
+
+            <div class="container">
+
+                <div class="gallery-hero__top">
+                    <span class="section-eyebrow">
+                        AUREA RESIDENCE · VISUAL EXPERIENCE
+                    </span>
+
+                    <span class="gallery-hero__index">
+                        АРХИТЕКТУРА / 01
+                    </span>
+                </div>
+
+                <h1>
+                    Пространство.<br>
+                    Светлина. <span>Хармония.</span>
+                </h1>
+
+                <div class="gallery-hero__bottom">
+
+                    <p>
+                        Разгледайте архитектурната концепция,
+                        интериорните пространства и детайлите,
+                        които оформят характера на AUREA RESIDENCE.
+                    </p>
+
+                    <a href="#gallery" class="gallery-hero__link">
+                        РАЗГЛЕДАЙТЕ ГАЛЕРИЯТА
+                        <span aria-hidden="true">↓</span>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY -->
+        <section class="gallery-section" id="gallery">
+
+            <div class="container">
+
+                <!-- FILTERS -->
+                <div class="gallery-toolbar">
+
+                    <div
+                        class="gallery-filters"
+                        role="group"
+                        aria-label="Филтриране на изображенията"
+                    >
+
+                        <button
+                            class="gallery-filter is-active"
+                            type="button"
+                            data-filter="all"
+                            aria-pressed="true"
+                        >
+                            Всички
+                        </button>
+
+                        <button
+                            class="gallery-filter"
+                            type="button"
+                            data-filter="exterior"
+                            aria-pressed="false"
+                        >
+                            Екстериор
+                        </button>
+
+                        <button
+                            class="gallery-filter"
+                            type="button"
+                            data-filter="interior"
+                            aria-pressed="false"
+                        >
+                            Интериор
+                        </button>
+
+                        <button
+                            class="gallery-filter"
+                            type="button"
+                            data-filter="details"
+                            aria-pressed="false"
+                        >
+                            Детайли
+                        </button>
+
+                    </div>
+
+                    <span class="gallery-toolbar__count">
+                        <span id="gallery-visible-count">08</span>
+                        <span>ИЗОБРАЖЕНИЯ</span>
+                    </span>
+
+                </div>
+
+
+                <!-- IMAGE GRID -->
+                <div class="gallery-grid" id="gallery-grid">
+
+                    <!-- EXTERIOR 01 -->
+                    <button
+                        class="gallery-item gallery-item--large"
+                        type="button"
+                        data-category="exterior"
+                        data-full="../assets/images/exterior/Exterior_02.jpg"
+                        data-title="Архитектурна концепция"
+                        aria-label="Отвори изображение: Архитектурна концепция"
+                    >
+                        <img
+                            src="../assets/images/exterior/Exterior_02.jpg"
+                            alt="Архитектурна визуализация на сградата"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ЕКСТЕРИОР</span>
+                                <strong>Архитектурна концепция</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- INTERIOR 01 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_03.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/interior_03.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- EXTERIOR 02 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="exterior"
+                        data-full="../assets/images/exterior/Exterior_01.jpg"
+                        data-title="Фасадни детайли"
+                        aria-label="Отвори изображение: Фасадни детайли"
+                    >
+                        <img
+                            src="../assets/images/exterior/Exterior_01.jpg"
+                            alt="Детайл от фасадата на сградата"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ЕКСТЕРИОР</span>
+                                <strong>Фасадни детайли</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- DETAILS 01 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="details"
+                        data-full="../assets/images/exterior/Detail_01.jpg"
+                        data-title="Материали и текстури"
+                        aria-label="Отвори изображение: Материали и текстури"
+                    >
+                        <img
+                            src="../assets/images/exterior/Detail_01.jpg"
+                            alt="Материали и текстури в архитектурния проект"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ДЕТАЙЛИ</span>
+                                <strong>Материали и текстури</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- INTERIOR 04 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_04.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_04.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 05 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_05.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_05.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 18 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_18.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_18.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 19 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_19.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_19.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- EXTERIOR 03 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="exterior"
+                        data-full="../assets/images/exterior/exterior_03.jpg"
+                        data-title="Архитектура и светлина"
+                        aria-label="Отвори изображение: Архитектура и светлина"
+                    >
+                        <img
+                            src="../assets/images/exterior/Exterior_03.jpg"
+                            alt="Архитектурна визуализация при естествена светлина"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ЕКСТЕРИОР</span>
+                                <strong>Архитектура и светлина</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- EXTERIOR 04 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="exterior"
+                        data-full="../assets/images/exterior/exterior_04.jpg"
+                        data-title="Архитектура и светлина"
+                        aria-label="Отвори изображение: Архитектура и светлина"
+                    >
+                        <img
+                            src="../assets/images/exterior/Exterior_04.jpg"
+                            alt="Архитектурна визуализация при естествена светлина"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ЕКСТЕРИОР</span>
+                                <strong>Архитектура и светлина</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 06 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_06.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_06.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 07 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_07.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_07.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+
+                    <!-- STORE 03 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/store_03.jpg"
+                        data-title="Интериор на магазин"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/store_03.jpg"
+                            alt="Интериор на магазин"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Интериор на магазин</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- INTERIOR 18 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_18.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_18.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 19 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_19.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_19.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- INTERIOR 20 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/interior_20.jpg"
+                        data-title="Съвременен интериор"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/Interior_20.jpg"
+                            alt="Интериорна визуализация на жилищно пространство"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Съвременен интериор</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                    <!-- STORE 01 -->
+                    <button
+                        class="gallery-item gallery-item--tall"
+                        type="button"
+                        data-category="interior"
+                        data-full="../assets/images/interiors/store_01.jpg"
+                        data-title="Интериор на магазин"
+                        aria-label="Отвори изображение: Съвременен интериор"
+                    >
+                        <img
+                            src="../assets/images/interiors/store_01.jpg"
+                            alt="Интериор на магазин"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ИНТЕРИОР</span>
+                                <strong>Интериор на магазин</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                    <!-- DETAILS 02 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="details"
+                        data-full="../assets/images/exterior/Detail_02.jpg"
+                        data-title="Внимание към детайла"
+                        aria-label="Отвори изображение: Внимание към детайла"
+                    >
+                        <img
+                            src="../assets/images/exterior/Detail_02.jpg"
+                            alt="Архитектурен детайл от проекта"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ДЕТАЙЛИ</span>
+                                <strong>Внимание към детайла</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+                     <!-- DETAILS 03 -->
+                    <button
+                        class="gallery-item"
+                        type="button"
+                        data-category="details"
+                        data-full="../assets/images/exterior/Detail_03.jpg"
+                        data-title="Материали и текстури"
+                        aria-label="Отвори изображение: Материали и текстури"
+                    >
+                        <img
+                            src="../assets/images/exterior/Detail_03.jpg"
+                            alt="Материали и текстури в архитектурния проект"
+                            loading="lazy"
+                        >
+
+                        <span class="gallery-item__overlay">
+                            <span class="gallery-item__caption">
+                                <span>ДЕТАЙЛИ</span>
+                                <strong>Материали и текстури</strong>
+                            </span>
+
+                            <span class="gallery-item__open" aria-hidden="true">
+                                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                                    <path d="M7 17 17 7M8 7h9v9" />
+                                </svg>
+                            </span>
+                        </span>
+                    </button>
+
+
+                </div>
+
+
+                <p class="gallery-empty" id="gallery-empty" hidden>
+                    Все още няма изображения в тази категория.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALLERY CTA -->
+        <section class="gallery-cta">
+
+            <div class="container">
+
+                <span class="section-eyebrow">
+                    AUREA RESIDENCE
+                </span>
+
+                <h2>
+                    Представете си<br>
+                    живота тук.
+                </h2>
+
+                <p>
+                    Разгледайте наличните апартаменти и открийте
+                    пространството, което отговаря на вашите нужди.
+                </p>
+
+                <a href="apartments.html" class="button button--light">
+                    РАЗГЛЕДАЙТЕ АПАРТАМЕНТИТЕ
+                    <span class="button__arrow" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- LIGHTBOX -->
+    <dialog class="gallery-lightbox" id="gallery-lightbox">
+
+        <div class="gallery-lightbox__toolbar">
+
+            <p
+                class="gallery-lightbox__title"
+                id="lightbox-title"
+            ></p>
+
+            <button
+                class="gallery-lightbox__close"
+                id="lightbox-close"
+                type="button"
+                aria-label="Затвори изображението"
+            >
+                <svg class="icon-svg icon-svg--close" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="m18 6-12 12M6 6l12 12" />
+                </svg>
+            </button>
+
+        </div>
+
+
+        <button
+            class="gallery-lightbox__nav gallery-lightbox__nav--previous"
+            id="lightbox-previous"
+            type="button"
+            aria-label="Предишно изображение"
+        >
+            <svg class="icon-svg icon-svg--left" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 12H5M12 19l-7-7 7-7" />
+            </svg>
+        </button>
+
+
+        <figure class="gallery-lightbox__figure">
+
+            <img
+                id="lightbox-image"
+                src=""
+                alt=""
+            >
+
+            <figcaption
+                class="gallery-lightbox__caption"
+                id="lightbox-caption"
+            ></figcaption>
+
+        </figure>
+
+
+        <button
+            class="gallery-lightbox__nav gallery-lightbox__nav--next"
+            id="lightbox-next"
+            type="button"
+            aria-label="Следващо изображение"
+        >
+            <svg class="icon-svg" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M5 12h14M12 5l7 7-7 7" />
+            </svg>
+        </button>
+
+        <span
+            class="gallery-lightbox__counter"
+            id="lightbox-counter"
+        ></span>
+
+    </dialog>
+
+
+    <footer class="footer">
+
+        <div class="footer__main">
+
+            <a href="../Index.html" class="footer__brand">
+                AUREA RESIDENCE
+            </a>
+
+            <p class="footer__description">
+                Съвременна архитектура.
+                Пространство за живот.
+            </p>
+
+            <nav class="footer__nav" aria-label="Навигация във футъра">
+
+                <a href="../Index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html">Контакти</a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="current-year"></span>
+                AUREA RESIDENCE
+            </p>
+
+            <a href="#top">
+                НАГОРЕ
+                <svg class="icon-svg icon-svg--up" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20V5M6 11l6-6 6 6" />
+                </svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../Js/header.js"></script>
+    <script src="../js/pages/gallery.js"></script>
+
+</body>
+</html>

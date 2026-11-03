@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>404 | AUREA RESIDENCE</title>
+
+    <meta
+        name="description"
+        content="Страницата, която търсите, не е намерена. Върнете се към AUREA RESIDENCE."
+    >
+    <link rel="icon" type="image/svg+xml" href="assets/images/Logo_02.png">
+    <link rel="stylesheet" href="public/css/main.min.css">
+</head>
+
+<body class="error-page">
+
+    
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            
+            <!-- LOGO -->
+            <a href="index.html"
+            class="header__brand"
+            aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                id="desktop-navigation"
+                aria-label="Основна навигация">
+
+                <a href="index.html" aria-current="page">Начало</a>
+                <a href="pages/apartments.html">Апартаменти</a>
+                <a href="pages/gallery.html">Галерия</a>
+                <a href="pages/model.html">3D Модел</a>
+                <a href="pages/location.html">Локация</a>
+                <a href="pages/contacts.html" class="desktop-navigation__contact">
+                    Контакти <span class="arrow-icon" aria-hidden="true"></span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+    </header>
+
+    <!-- MOBILE NAVIGATION -->
+    <nav class="navigation"
+        id="main-navigation"
+        aria-label="Мобилна навигация"
+        aria-hidden="true"
+        inert>
+
+        <div class="navigation__inner">
+
+            <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+            <ul class="navigation__list">
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="pages/apartments.html">Апартаменти</a></li>
+                <li><a href="pages/gallery.html">Галерия</a></li>
+                <li><a href="pages/model.html">3D Модел</a></li>
+                <li><a href="pages/location.html">Локация</a></li>
+                <li><a href="pages/contacts.html">Контакти</a></li>
+            </ul>
+
+            <div class="navigation__footer">
+                <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                <span>СОФИЯ, БЪЛГАРИЯ</span>
+            </div>
+
+        </div>
+    </nav>
+
+    <main class="error-main">
+        <div class="error-content">
+
+            <span class="error-eyebrow">AUREA RESIDENCE</span>
+
+            <h1 class="error-code">404</h1>
+
+            <h2 class="error-title">
+                Страницата не е намерена
+            </h2>
+
+            <p class="error-description">
+                Изглежда, че сте попаднали на адрес, който не съществува.
+                Възможно е страницата да е преместена или премахната.
+            </p>
+
+            <a href="index.html" class="button button--primary error-button">
+                <span>Към началната страница</span>
+                <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M7 17 17 7M8 7h9v9" />
+                </svg>
+            </a>
+
+            <span class="error-footer">СЪВРЕМЕНЕН ЖИЛИЩЕН ПРОЕКТ</span>
+
+        </div>
+
+        <div class="error-decoration" aria-hidden="true">
+            <span>404</span>
+        </div>
+    </main>
+
+    <script src="js/header.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Локация | AUREA RESIDENCE</title>
+
+    <meta
+        name="description"
+        content="Открийте местоположението на AUREA RESIDENCE в София и разгледайте района около сградата."
+    >
+
+    <link rel="stylesheet" href="../public/css/main.min.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo_02.png">
+</head>
+
+<body class="location-page">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            
+            <!-- LOGO -->
+            <a href="../index.html"
+            class="header__brand"
+            aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="../assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                id="desktop-navigation"
+                aria-label="Основна навигация">
+
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html" class="desktop-navigation__contact" aria-current="page">
+                    Контакти
+                    <span class="arrow-icon" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+        
+        <!-- MOBILE NAVIGATION -->
+        <nav class="navigation"
+            id="main-navigation"
+            aria-label="Мобилна навигация"
+            aria-hidden="true"
+            inert>
+
+            <div class="navigation__inner">
+
+                <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+                <ul class="navigation__list">
+                    <li><a href="../index.html">Начало</a></li>
+                    <li><a href="../pages/apartments.html">Апартаменти</a></li>
+                    <li><a href="../pages/gallery.html">Галерия</a></li>
+                    <li><a href="../pages/model.html">3D Модел</a></li>
+                    <li><a href="../pages/location.html">Локация</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+
+                <div class="navigation__footer">
+                    <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                    <span>СОФИЯ, БЪЛГАРИЯ</span>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+
+
+    <main>
+
+        <!-- HERO -->
+        <section class="location-hero">
+
+            <img
+                class="location-hero__image"
+                src="../assets/images/exterior/Exterior_02.jpg"
+                alt="AUREA RESIDENCE — архитектурна визуализация на сградата"
+            >
+            <div class="location-hero__overlay"></div>
+
+            <div class="container location-hero__content">
+
+                <span class="section-eyebrow">
+                    AUREA RESIDENCE · SOFIA
+                </span>
+
+                <h1>
+                    Правилното място<br>
+                    на вашия дом
+                </h1>
+
+                <p>
+                    Домът не е само пространството, в което живеем.
+                    Той е и средата, която ни заобикаля.
+                </p>
+
+                <a href="#location-map" class="location-hero__link">
+                    ОТКРИЙТЕ ЛОКАЦИЯТА
+                    <span class="arrow-icon" aria-hidden="true">
+                    </span>
+                </a>
+
+            </div>
+
+            <div class="location-hero__index">
+                LOCATION — 01
+            </div>
+
+        </section>
+
+
+        <!-- INTRODUCTION -->
+        <section class="location-intro">
+            <div class="container">
+
+                <div class="location-intro__grid">
+
+                    <div class="location-intro__heading">
+
+                        <span class="section-eyebrow">
+                            МЕСТОПОЛОЖЕНИЕ
+                        </span>
+
+                        <h2>
+                            Градът е част<br>
+                            от вашия дом.
+                        </h2>
+
+                    </div>
+
+                    <div class="location-intro__text">
+
+                        <p>
+                            Изборът на жилище е и избор на среда —
+                            на ежедневните маршрути, местата за срещи
+                            и пространствата за почивка.
+                        </p>
+
+                        <p>
+                            Разгледайте местоположението на AUREA
+                            RESIDENCE върху картата и планирайте
+                            своето посещение.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- MAP -->
+        <section class="location-map-section" id="location-map">
+
+            <div class="container">
+
+                <div class="location-map-section__heading">
+
+                    <div>
+                        <span class="section-eyebrow">
+                            НАМЕРЕТЕ НИ
+                        </span>
+
+                        <h2>Открийте AUREA RESIDENCE.</h2>
+                    </div>
+
+                    <a
+                        class="location-map__external-link"
+                        href="https://www.google.com/maps/dir/?api=1&destination=42.647140%2C23.326898"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        ПЛАНИРАЙТЕ МАРШРУТ
+                        <span class="arrow-icon" aria-hidden="true">
+                        </span>
+                    </a>
+
+                </div>
+
+
+                <div class="location-map">
+
+                    <iframe
+                        title="Местоположение на AUREA RESIDENCE"
+                        src="https://maps.google.com/maps?q=42.647140%2C23.326898&z=16&output=embed"
+                        width="100%"
+                        height="550"
+                        style="border:0;"
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        allowfullscreen
+                    ></iframe>
+
+                </div>
+
+
+                <div class="location-map__footer">
+
+                    <div class="location-map__address">
+
+                        <span class="location-map__marker" aria-hidden="true">
+                            +
+                        </span>
+
+                        <div>
+                            <strong>AUREA RESIDENCE</strong>
+
+                            <p>
+                                София, България
+                            </p>
+                        </div>
+
+                    </div>
+
+
+                    <div class="location-map__coordinates">
+                        <span>GPS КООРДИНАТИ</span>
+                        <p>42.647140, 23.326898</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- LOCATION ADVANTAGES -->
+        <section class="location-benefits">
+
+            <div class="container">
+
+                <div class="location-benefits__intro">
+
+                    <span class="section-eyebrow">
+                        ВСИЧКО ЗАПОЧВА ОТ ЛОКАЦИЯТА
+                    </span>
+
+                    <h2>
+                        Повече от адрес.<br>
+                        Начин на живот.
+                    </h2>
+
+                    <p>
+                        Добрата локация съчетава удобството на града
+                        с възможността да създадете собствено
+                        пространство за живот.
+                    </p>
+
+                </div>
+
+
+                <div class="location-benefits__grid">
+
+                    <article class="location-benefit">
+
+                        <span class="location-benefit__number">01</span>
+
+                        <h3>Градска свързаност</h3>
+
+                        <p>
+                            Разгледайте транспортните връзки и
+                            възможностите за придвижване в района.
+                        </p>
+
+                    </article>
+
+
+                    <article class="location-benefit">
+
+                        <span class="location-benefit__number">02</span>
+
+                        <h3>Ежедневни удобства</h3>
+
+                        <p>
+                            Открийте търговските обекти, услугите
+                            и местата за срещи около сградата.
+                        </p>
+
+                    </article>
+
+
+                    <article class="location-benefit">
+
+                        <span class="location-benefit__number">03</span>
+
+                        <h3>Вашето лично пространство</h3>
+
+                        <p>
+                            Място, към което да се връщате и
+                            в което да се чувствате у дома.
+                        </p>
+
+                    </article>
+
+                </div>
+
+                <p class="location-benefits__disclaimer">
+                    Информацията за конкретни обекти, разстояния
+                    и транспортни връзки следва да бъде потвърдена
+                    за действителната локация на проекта.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+        <section class="location-cta">
+
+            <div class="container">
+
+                <span class="section-eyebrow">
+                    НАПРАВЕТЕ СЛЕДВАЩАТА СТЪПКА
+                </span>
+
+                <h2>
+                    Елате да откриете<br>
+                    своя нов дом.
+                </h2>
+
+                <p>
+                    Свържете се с нас, за да получите повече
+                    информация за проекта и наличните апартаменти.
+                </p>
+
+                <div class="location-cta__actions">
+
+                    <a
+                        href="contacts.html"
+                        class="button button--light"
+                    >
+                        СВЪРЖЕТЕ СЕ С НАС
+                        <span class="button__arrow" aria-hidden="true">
+                        </span>
+                    </a>
+
+                    <a
+                        href="apartments.html"
+                        class="location-cta__secondary"
+                    >
+                        РАЗГЛЕДАЙТЕ АПАРТАМЕНТИТЕ
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="footer__main">
+
+            <a href="../index.html" class="footer__brand">
+                AUREA RESIDENCE
+            </a>
+
+            <p class="footer__description">
+                Съвременна архитектура.
+                Пространство за живот.
+            </p>
+
+            <nav class="footer__nav" aria-label="Навигация във футъра">
+
+                <a href="../index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html">Контакти</a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="current-year"></span>
+                AUREA RESIDENCE
+            </p>
+
+            <a href="#top">
+                НАГОРЕ
+                <svg class="icon-svg icon-svg--up" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20V5M6 11l6-6 6 6" />
+                </svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../js/header.js"></script>
+    <script src="../js/pages/location.js"></script>
+
+</body>
+</html>

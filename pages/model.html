@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="bg">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Галерия | AUREA RESIDENCE</title>
+
+    <meta
+        name="description"
+        content="Разгледайте архитектурата, екстериора и интериорните пространства на AUREA RESIDENCE."
+    >
+
+    <link rel="stylesheet" href="../public/css/main.min.css">
+    <link rel="icon" type="image/svg+xml" href="../assets/images/Logo_02.png">
+</head>
+
+<body class="gallery-page" id="top">
+
+    <!-- HEADER -->
+    <header class="header" id="header">
+        <div class="header__inner">
+
+            
+            <!-- LOGO -->
+            <a href="../Index.html"
+            class="header__brand"
+            aria-label="Aurea Residence — Начална страница">
+
+                <img
+                    class="header__logo"
+                    src="../assets/images/Logo.png"
+                    alt="Aurea Residence"
+                    width="600"
+                    height="200"
+                >
+
+            </a>
+
+
+            <!-- DESKTOP NAVIGATION -->
+            <nav class="desktop-navigation"
+                id="desktop-navigation"
+                aria-label="Основна навигация">
+
+                <a href="../Index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html" aria-current="page">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html" class="desktop-navigation__contact">
+                    Контакти
+                    <span class="arrow-icon" aria-hidden="true">
+                        <svg class="icon-svg icon-svg--up-right" viewBox="0 0 24 24">
+                            <path d="M7 17 17 7M8 7h9v9" />
+                        </svg>
+                    </span>
+                </a>
+
+            </nav>
+
+            <!-- MOBILE MENU BUTTON -->
+            <button
+                class="menu-toggle"
+                id="menu-toggle"
+                type="button"
+                aria-label="Отвори менюто"
+                aria-expanded="false"
+                aria-controls="main-navigation">
+
+                <span class="menu-toggle__text">МЕНЮ</span>
+
+                <span class="menu-toggle__icon" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                </span>
+
+            </button>
+
+        </div>
+        
+        <!-- MOBILE NAVIGATION -->
+        <nav class="navigation"
+            id="main-navigation"
+            aria-label="Мобилна навигация"
+            aria-hidden="true"
+            inert>
+
+            <div class="navigation__inner">
+
+                <p class="navigation__eyebrow">ОТКРИЙТЕ ПРОЕКТА</p>
+
+                <ul class="navigation__list">
+                    <li><a href="../Index.html">Начало</a></li>
+                    <li><a href="../pages/apartments.html">Апартаменти</a></li>
+                    <li><a href="../pages/gallery.html">Галерия</a></li>
+                    <li><a href="../pages/model.html">3D Модел</a></li>
+                    <li><a href="../pages/location.html">Локация</a></li>
+                    <li><a href="../pages/contacts.html">Контакти</a></li>
+                </ul>
+
+                <div class="navigation__footer">
+                    <span>СЪВРЕМЕННА АРХИТЕКТУРА</span>
+                    <span>СОФИЯ, БЪЛГАРИЯ</span>
+                </div>
+
+            </div>
+        </nav>
+
+    </header>
+    
+    <!-- EXTERIOR HERO -->
+    <section class="gallery-cover" aria-label="Архитектура на AUREA RESIDENCE">
+        <img
+            class="gallery-cover__image"
+            src="../assets/images/exterior/Exterior_02.jpg"
+            alt="Архитектурна визуализация на AUREA RESIDENCE"
+            fetchpriority="high"
+        >
+
+        <div class="gallery-cover__overlay"></div>
+
+        <div class="gallery-cover__content">
+            <span class="gallery-cover__eyebrow">
+                AUREA RESIDENCE / АРХИТЕКТУРА
+            </span>
+
+            <h1>
+                Архитектура.<br>
+                <span>Светлина. Хармония.</span>
+            </h1>
+
+        </div>
+
+        <span class="gallery-cover__index">01 — 08</span>
+    </section>
+
+
+    <main>
+
+
+        <script type="module"
+            src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js">
+            </script>
+
+                    
+        <section class="building-model-section">
+
+            <div class="building-model-container">
+
+                <!-- LOADING SCREEN -->
+                <div class="model-loader" id="model-loader">
+
+                    <div class="model-loader__content">
+
+                        <span class="model-loader__brand">
+                            AUREA RESIDENCE
+                        </span>
+
+                        <span class="model-loader__subtitle">
+                            Interactive 3D Experience
+                        </span>
+
+                        <div class="model-loader__spinner"></div>
+
+                        <div class="model-loader__progress">
+                            <span
+                                class="model-loader__progress-bar"
+                                id="model-progress-bar">
+                            </span>
+                        </div>
+
+                        <div class="model-loader__status">
+                            <span id="model-loading-text">
+                                Зареждане на 3D модела
+                            </span>
+
+                            <span
+                                class="model-loader__percentage"
+                                id="model-percentage">
+                                0%
+                            </span>
+                        </div>
+
+                        <p
+                            class="model-loader__error"
+                            id="model-error">
+                            Възникна проблем при зареждането на 3D модела.
+                            Моля, опитайте да презаредите страницата.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- 3D MODEL -->
+                <model-viewer
+                    id="building-model"
+                    class="building-model"
+                    src="../assets/models/building.glb"
+                    alt="Интерактивен 3D модел на AUREA RESIDENCE"
+                    camera-controls
+                    auto-rotate
+                    shadow-intensity="1"
+                    exposure="1"
+                    environment-image="neutral"
+                    loading="eager">
+
+                </model-viewer>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer__main">
+
+            <a href="../Index.html" class="footer__brand">
+                AUREA RESIDENCE
+            </a>
+
+            <p class="footer__description">
+                Съвременна архитектура.
+                Пространство за живот.
+            </p>
+
+            <nav class="footer__nav" aria-label="Навигация във футъра">
+
+                <a href="../Index.html">Начало</a>
+                <a href="../pages/apartments.html">Апартаменти</a>
+                <a href="../pages/gallery.html">Галерия</a>
+                <a href="../pages/model.html">3D Модел</a>
+                <a href="../pages/location.html">Локация</a>
+                <a href="../pages/contacts.html">Контакти</a>
+
+            </nav>
+
+        </div>
+
+        <div class="footer__bottom">
+
+            <p>
+                © <span id="current-year"></span>
+                AUREA RESIDENCE
+            </p>
+
+            <a href="#top">
+                НАГОРЕ
+                <svg class="icon-svg icon-svg--up" viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20V5M6 11l6-6 6 6" />
+                </svg>
+            </a>
+
+        </div>
+
+    </footer>
+
+
+    <script src="../Js/header.js"></script>
+    <script src="../js/pages/gallery.js"></script>
+    <script src="../js/pages/model.js"></script>
+
+</body>
+</html>
